@@ -24,6 +24,7 @@ function displayAllClassrooms(classrooms) {
     classrooms.forEach(classroom => {
         console.log(`Название: ${classroom.name}, Места: ${classroom.place}, Факультет: ${classroom.faculty}`);
     });
+    console.log(`\n`);
 }
 
 // 2. Вывод аудиторий для указанного факультета
@@ -32,6 +33,7 @@ function displayClassroomsForFaculty(classrooms, faculty) {
     classrooms.filter(classroom => classroom.faculty === faculty).forEach(classroom => {
         console.log(`Название: ${classroom.name}, Места: ${classroom.place}, Факультет: ${classroom.faculty}`);
     });
+    console.log(`\n`);
 }
 
 // 3. Вывод аудиторий, подходящих для указанной группы
@@ -42,6 +44,7 @@ function displayClassroomsForGroup(classrooms, group) {
     ).forEach(classroom => {
         console.log(`Название: ${classroom.name}, Места: ${classroom.place}, Факультет: ${classroom.faculty}`);
     });
+    console.log(`\n`);
 }
 
 // 4. Сортировка аудиторий по количеству мест
@@ -70,6 +73,7 @@ console.log("Аудитории, отсортированные по колич�
 sortedBySeats.forEach(classroom => {
     console.log(`Название: ${classroom.name}, Места: ${classroom.place}, Факультет: ${classroom.faculty}`);
 });
+console.log(`\n`);
 
 // Сортировка аудиторий по названию и вывод результата
 let sortedByName = sortClassroomsByName(classrooms);
@@ -77,3 +81,4 @@ console.log("Аудитории, отсортированные по назва�
 sortedByName.forEach(classroom => {
     console.log(`Название: ${classroom.name}, Места: ${classroom.place}, Факультет: ${classroom.faculty}`);
 });
+console.log(`\n`);
