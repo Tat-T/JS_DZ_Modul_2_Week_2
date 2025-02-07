@@ -7,4 +7,8 @@
 
 `node check.js`
 
+`node shopping_list.js`
+
+### Открыть в браузере index.html чтобы увидеть в работе скрипт:
+
 `css_style.js`
